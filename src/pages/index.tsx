@@ -10,7 +10,6 @@ import {
   Title,
 } from "@mantine/core";
 import { useSetState } from "@mantine/hooks";
-import { FilePondFile } from "filepond";
 
 const HomePage = () => {
   const [state, setState] = useSetState<{
