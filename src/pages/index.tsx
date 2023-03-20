@@ -1,5 +1,7 @@
 import FileDropzone from "@/conponents/FileDropzone";
 import { ICloudinaryFileObject } from "@/models/cloudinary.model";
+import JsFileDownloader from "js-file-downloader";
+
 import {
   Button,
   Container,
@@ -17,6 +19,15 @@ const HomePage = () => {
   }>({
     asset: null,
   });
+
+  const handleFileUpload = (url: string) => {
+    const dl = new JsFileDownloader({ url });
+    dl.then((res) => {
+      console.log(res);
+    }).catch((err) => {
+      console.log(err);
+    });
+  };
 
   return (
     <Container size={"sm"}>
@@ -77,6 +88,13 @@ const HomePage = () => {
             height={500}
             alt="file"
           />
+          <Space h={"sm"} />
+          <Button
+            fullWidth
+            onClick={() => handleFileUpload(state.asset?.secure_url!)}
+          >
+            Download
+          </Button>
         </>
       )}
     </Container>

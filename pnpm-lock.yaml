@@ -12,6 +12,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-next: 13.2.4
   filepond: ^4.30.4
+  js-file-downloader: ^1.1.24
   next: 13.2.4
   react: 18.2.0
   react-dom: 18.2.0
@@ -30,6 +31,7 @@ dependencies:
   eslint: 8.36.0
   eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
   filepond: 4.30.4
+  js-file-downloader: 1.1.24
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2052,6 +2054,10 @@ packages:
 
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+    dev: false
+
+  /js-file-downloader/1.1.24:
+    resolution: {integrity: sha512-DbOKEtofflVV8DfdFEkkykJQW1jWXT56+G2dC6dn1tLGRHjoVsdMpYKKyxQb/jJv2CGNxuTvMTpPmqYEf+LTGA==}
     dev: false
 
   /js-sdsl/4.3.0:
